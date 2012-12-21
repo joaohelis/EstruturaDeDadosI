@@ -31,7 +31,7 @@ public class ArrayStack implements Stack {
 		return aux;
 	}
 	
-	@Override
+	
 	public void push(Aluno arg0) {
 		if(this.incremento == 0 && size == this.stack.length)
 			throw new FullStackException("full Stack");
@@ -41,7 +41,6 @@ public class ArrayStack implements Stack {
 		++size;
 	}
 	
-	@Override
 	public Aluno pop() throws EmptyStackException{
 		if(size == 0)throw new EmptyStackException("Empty stack");
 		Aluno aux = this.stack[size-1];
@@ -52,18 +51,18 @@ public class ArrayStack implements Stack {
 		return aux;
 	}
 	
-	@Override
+	
 	public Aluno top() throws EmptyStackException {
 		if(size == 0)throw new EmptyStackException("Empty stack");
 		return this.stack[size-1];
 	}
 
-	@Override
+	
 	public boolean empty() {
 		return (size == 0)?true:false;
 	}
 
-	@Override
+
 	public int size() {
 		return this.size;
 	}
