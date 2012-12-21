@@ -1,4 +1,6 @@
-package src.estrutura.pratica_05;
+package estrutura.pratica_05;
+
+import javax.swing.JOptionPane;
 
 public class SortingAlgorithms {
 	
